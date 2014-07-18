@@ -84,13 +84,10 @@ $filename = 'http://localhost/remote/whitelist.txt';
 $current_dir = dirname(__FILE__); // return the path of the current php file on your server like /var/www/auth_dir
 $var_dir = str_replace("/www/auth_dir", "", $current); // return /var
 $whitelist_file = $var_dir."/craftbukkit_server/whitelist.txt"; // return /var/craftbukkit_server/whitelist.txt
-
 //So finally you can use this for example in config.php :
 $filename = str_replace("/www/auth_dir", "", dirname(__FILE__))."/craftbukkit_server/whitelist.txt";
-
 //You can also use a succession of dirname() functions to go up in arborescence :
 $filename = dirname(dirname(dirname(__FILE__)))."/craftbukkit_server/whitelist.txt";
-
 //If you already know the absolute path of the whitelist file, enter the absolute path :
 $filename = "/var/craftbukkit_server/whitelist.txt";
 ```
