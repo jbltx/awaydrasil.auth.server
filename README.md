@@ -16,7 +16,7 @@ Informations
 > 
 > - **AwayDrasil** only work using **MineLauncherCreator** application, which will create your own custom launcher.
 > - If you don't want to use **MineLauncherCreator**, you have to find the same launcher source-code used by the app by yourself.
-> - The official forum for **MLC** is **Minecraft.fr** (see [<i class="icon-share"></i> the forum post here](#synchronization)).
+> - The official forum for **MLC** is **Minecraft.fr** (see [<i class="icon-share"></i> the forum post here](http://minecraft.fr/forum/index.php?threads/07-2014-creation-de-launcher-1-6-2-%C3%A0-1-7-9-mlc.118972/)).
 > - You have to use a SSL certification for the security of your server, and for the security of personnal users informations. (https)
 
 #### <i class="icon-download"></i><i class="icon-upload"></i> JSON content
