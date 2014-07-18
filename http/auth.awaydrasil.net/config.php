@@ -62,7 +62,7 @@ function base_url()
 	return $cfg_hostname;
 }
 
-function certification(){
+function get_certification(){
 	global $cfg_certificate;
 	$result = getcwd().$cfg_certificate;
 	return $result;
