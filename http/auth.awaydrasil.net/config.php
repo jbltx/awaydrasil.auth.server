@@ -24,13 +24,6 @@ $cfg_db_password = '';
 $cfg_db_database = 'minecraft_server_db';
 
 
-
-$cfg_certificate = '/cacert.pem'; // Use the "/" before the name of your certificate file even if it's located to the root dir.
-
-//GO TO http://curl.haxx.se/docs/caextract.html to find the latet cacert.pem file !
-
-
-
 // FOR WHITELIST USER : enter your whitelist path here :
 $filename = 'http://localhost/remote/whitelist.txt';
 
@@ -60,12 +53,6 @@ function base_url()
 {
 	global $cfg_hostname;
 	return $cfg_hostname;
-}
-
-function get_certification(){
-	global $cfg_certificate;
-	$result = getcwd().$cfg_certificate;
-	return $result;
 }
 
 function system_used(){
