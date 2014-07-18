@@ -47,6 +47,13 @@
 			$errorMessage = "The server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method";
 			$notes = "Data was not submitted as application/json";
 		}
+		elseif($er_nb == 7)
+		{
+			$error = "Unable to find SSL certification.";
+			$cause = "";
+			$errorMessage = "The server doesn't find its own certification, all operations are aborted.";
+			$notes = "Invalid Certificat file path, or Certificat doesn't exist.";
+		}
 	
 	
 	
