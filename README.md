@@ -73,7 +73,41 @@ Then enter sql database informations (if you use it, of course)
 $cfg_db_host = 'localhost'; //sql server URL
 $cfg_db_username = 'root'; //username
 $cfg_db_password = ''; //password
-$cfg_db_database = 'remote'; //name of the database chosen to make the verification
+$cfg_db_database = 'minecraft_server_db'; //name of the database chosen to make the verification
+```
+Here is an example of SQL request to create your database :
+```
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+ 
+ 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+ 
+--
+-- Database: `minecraft_server_db`
+--
+CREATE DATABASE IF NOT EXISTS `minecraft_server_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `minecraft_server_db`;
+ 
+-- --------------------------------------------------------
+ 
+--
+-- Table structure for table `members`
+--
+ 
+CREATE TABLE IF NOT EXISTS `members` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+ 
+ 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 ```
 If you want to use the whitelist method, you have to enter the adress where we can find this file
 ```
