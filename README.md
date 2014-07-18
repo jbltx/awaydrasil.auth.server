@@ -99,3 +99,6 @@ Finish
 -----------
 
 You just just have to upload all on your server. You can test it by using web applications like [POSTMAN](http://www.getpostman.com/) to create HTTP JSON request...
+```
+{"username":"YOUR_MINECRAFT_USERNAME"}
+```
