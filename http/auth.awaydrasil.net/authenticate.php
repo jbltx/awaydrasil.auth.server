@@ -3,8 +3,7 @@
 	include('config.php');
 	include('errors.php');
 
-  if(file_exists(get_certification()))
-  {
+
   	if(system_used() == "database")
   	{
   		if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -70,11 +69,7 @@
   		}
   	}
   	
-	}
-	else
-	{
-	  echo show_error(7);
-	}
+
 	
 	
 	
@@ -83,8 +78,7 @@
 	
 	function authenticate($u)
 	{
-	  if(file_exists(get_certification()))
-	  {
+
 	    if($u != NULL)
   		{
   			$query1 = mysqli_query(db_connect(), "SELECT COUNT(*) AS exist FROM members WHERE username = '$u'") or die(mysqli_error(db_connect()));
@@ -102,11 +96,7 @@
   		{
   			return false;
   		}
-	  }
-	  else
-	  {
-	    echo show_error(7);
-	  }
+
 	}
 	
 ?>
