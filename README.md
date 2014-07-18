@@ -46,7 +46,7 @@ Installation
 
 #### <i class="icon-download"></i> Download all the source files
 
-You can do this by using this [link][1] or by create a git repo on your machine.
+You can do this by using this [link](https://github.com/jbltx/awaydrasil.auth.server/archive/master.zip) or by create a git repo on your machine.
 
 #### <i class="icon-folder"></i> Extract files
 
